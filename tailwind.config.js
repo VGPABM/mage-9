@@ -1,10 +1,25 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     maxWidth: {
       container: '1520px',
-      contentContainer: '1280px',
+      contentContainer: '1280',
+      contentContainer2: '1620px',
+    },
+    borderRadius: {
+      none: '0',
+      sm: '0.125rem',
+      DEFAULT: '0.25rem',
+      DEFAULT: '4px',
+      md: '0.375rem',
+      lg: '0.5rem',
+      full: '9999px',
+      large: '12px',
+      gedepol: '300px',
+      sedang: '125px',
     },
     extend: {
       screens: {
@@ -46,9 +61,14 @@ module.exports = {
 
         MagePink: '#E336B4',
         MagePurple: '#0019D5',
+        White: '#ffffff',
+        Black: '#000000',
       },
       boxShadow: {
         bannerShadow: '0 1px 2px 1px #00000026',
+      },
+      fontFamily: {
+        sans: ['var(--font-open_sans)', ...fontFamily.sans],
       },
     },
   },

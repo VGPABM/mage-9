@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
+import TopPart from '@/components/TopPart';
+import '../styles/globals.css';
 
 export default function Home() {
   return (
@@ -12,6 +14,9 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
+        <div className="max-w-contentContainer2 mx-auto ">
+          <TopPart />
+        </div>
       </main>
     </>
   );
