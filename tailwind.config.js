@@ -8,6 +8,7 @@ module.exports = {
       container: '1520px',
       contentContainer: '1280',
       contentContainer2: '1620px',
+      containerDescription: '1000px',
     },
     borderRadius: {
       none: '0',
