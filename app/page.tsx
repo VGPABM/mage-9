@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import TopPart from '@/components/TopPart';
+import Competition from '@/components/Competition';
 import '../styles/globals.css';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Navbar />
         <div className="max-w-contentContainer2 mx-auto ">
           <TopPart />
+          <Competition />
         </div>
       </main>
     </>

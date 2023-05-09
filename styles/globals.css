@@ -9,4 +9,7 @@
   .buttonHover {
     @apply absolute flex inset-y-2 right-10 w-24 h-10 px-5 rounded-none bg-transparent top-5 gap-2 items-center outline hover:outline-2 duration-100 cursor-pointer;
   }
+  .getStarted {
+    @apply h-16 px-5 rounded-full  flex gap-2 items-center hover:bg-BaseDarkestBlue duration-300 cursor-pointer;
+  }
 }
