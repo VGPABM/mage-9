@@ -1,7 +1,12 @@
 import React from 'react';
+import HoverVideoPlayer from 'react-hover-video-player';
 import Image from 'next/image';
 import Video from 'next/';
 import '../styles/globals.css';
+import { RoboticCard } from '@/public/assets/images';
+import { AppDevCard } from '@/public/assets/images';
+import { GameDevCard } from '@/public/assets/images';
+import { IOTCard } from '@/public/assets/images';
 
 const Competition = () => {
   return (
@@ -13,9 +18,26 @@ const Competition = () => {
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
           <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <video autoPlay muted loop className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125">
-                <source src="../public/assets/videos/No-Centering.mp4" type="video/mp4" />
-              </video>
+              <HoverVideoPlayer
+                videoSrc={require('../public/assets/videos/Boston Dynamic.mp4')}
+                pausedOverlay={
+                  <Image
+                    src={RoboticCard}
+                    alt=""
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                    }}
+                  />
+                }
+                loadingOverlay={
+                  <div className="loading-overlay">
+                    <div className="loading-spinner" />
+                  </div>
+                }
+              />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
@@ -26,11 +48,7 @@ const Competition = () => {
           </div>
           <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                src="https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
-                alt=""
-              />
+              <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={GameDevCard} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
@@ -41,11 +59,7 @@ const Competition = () => {
           </div>
           <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                src="https://images.unsplash.com/photo-1502675135487-e971002a6adb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
-                alt=""
-              />
+              <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={AppDevCard} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
@@ -56,11 +70,7 @@ const Competition = () => {
           </div>
           <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <img
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                src="https://images.unsplash.com/photo-1502675135487-e971002a6adb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
-                alt=""
-              />
+              <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={IOTCard} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
