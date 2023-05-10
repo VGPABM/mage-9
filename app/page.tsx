@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import TopPart from '@/components/TopPart';
 import Competition from '@/components/Competition';
+import MediaPartner from '@/components/MediaPartner';
+import Footer from '@/components/Footer';
 import '../styles/globals.css';
 
 export default function Home() {
@@ -19,6 +21,10 @@ export default function Home() {
           <TopPart />
           <Competition />
         </div>
+        <div className="max-w-screen min-h-[1000px]">
+          <MediaPartner />
+        </div>
+        <Footer />
       </main>
     </>
   );

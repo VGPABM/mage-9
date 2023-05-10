@@ -1,5 +1,4 @@
 import React from 'react';
-import HoverVideoPlayer from 'react-hover-video-player';
 import Image from 'next/image';
 import Video from 'next/';
 import '../styles/globals.css';
@@ -11,33 +10,14 @@ import { IOTCard } from '@/public/assets/images';
 const Competition = () => {
   return (
     <div>
-      <p className="justify-center items-center absolute w-[1129px] h-[120px] left-[calc(50%-1129px/2-0.5px)] top-[744px] font-[500] text-8xl leading-[120px] text-justify tracking-[0.435em] drop-shadow-[4px_4px_9px_rgba(80,184,231,0.55)] text-Competition">
+      <p className="justify-center items-center absolute w-[1129px] h-[120px] left-[calc(50%-1129px/2-0.5px)] top-[744px] font-[500] text-8xl leading-[120px] text-justify tracking-[0.435em] drop-shadow-[4px_4px_9px_rgba(80,184,231,0.9)] text-Competition">
         Competition
       </p>
       <div className="flex min-h-screen items-center justify-center">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
-          <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div className="group relative rounded-[38px] shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
-              <HoverVideoPlayer
-                videoSrc={require('../public/assets/videos/Boston Dynamic.mp4')}
-                pausedOverlay={
-                  <Image
-                    src={RoboticCard}
-                    alt=""
-                    style={{
-                      // Make the image expand to cover the video's dimensions
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                    }}
-                  />
-                }
-                loadingOverlay={
-                  <div className="loading-overlay">
-                    <div className="loading-spinner" />
-                  </div>
-                }
-              />
+              <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={RoboticCard} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
@@ -46,7 +26,7 @@ const Competition = () => {
               <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
             </div>
           </div>
-          <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div className="group relative rounded-[38px] shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
               <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={GameDevCard} alt="" />
             </div>
@@ -57,7 +37,7 @@ const Competition = () => {
               <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
             </div>
           </div>
-          <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div className="group relative rounded-[38px] shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
               <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={AppDevCard} alt="" />
             </div>
@@ -68,7 +48,7 @@ const Competition = () => {
               <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
             </div>
           </div>
-          <div className="group relative rounded-[38px] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div className="group relative rounded-[38px] shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div className="h-96 w-72">
               <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={IOTCard} alt="" />
             </div>

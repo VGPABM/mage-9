@@ -6,7 +6,7 @@ import '../styles/globals.css';
 
 const Navbar = () => {
   return (
-    <div className="w-full text-Black">
+    <div className="w-full text-Black ">
       <div className="w-full bg-BaseLightBlue">
         <div className="max-w-16 mx-auto h-20 px-4 flex items-center gap-2">
           <div className="navBarHover">
