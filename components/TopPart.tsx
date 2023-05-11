@@ -10,7 +10,7 @@ const TopPart = () => {
         <div className="max-w-[75%] container mt-[47px] ml-16">
           <div>
             <h2 className="font-medium text-BaseLightestBlue max-w-[75%] text-justify text-8xl">
-              What is <span className="font-extrabold text-BaseLightestBlue max-w-[75%] text-justify text-8xl">Mage 9? </span>
+              What is <span className="font-extrabold text-BaseLightestBlue max-w-[75%] text-justify text-8xl uppercase">Mage 9? </span>
             </h2>
             <p className="mt-5 text-BaseLightestBlue max-w-[75%] text-justify text-2xl">
               MAGE (Multimedia and Game Event) adalah serangkaian acara dibidang IT yang diadakan oleh Departemen Teknik Komputer - FTEIC ITS sebagai wadah bagi generasi muda dalam berkreasi, berekspresi, dan berkompetisi untuk menuangkan
