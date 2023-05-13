@@ -12,4 +12,7 @@
   .getStarted {
     @apply h-16 px-5 rounded-full  flex gap-2 items-center hover:bg-BaseDarkestBlue duration-300 cursor-pointer;
   }
+  .cardHomePage {
+    @apply absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70;
+  }
 }
