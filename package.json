@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons": "^2.18.0",
     "@types/node": "20.0.0",
     "@types/react": "18.2.5",
     "@types/react-dom": "18.2.3",
@@ -34,5 +35,17 @@
     "file-loader": "^6.2.0",
     "html-loader": "^4.2.0",
     "url-loader": "^4.1.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./icons-react/dist/index.esm.js",
+      "require": "./icons-react/dist/index.cjs.js",
+      "types": "./icons-react/index.d.ts"
+    },
+    "./iconfont/*": "./iconfont/*",
+    "./*": [
+      "./icons/*",
+      "./icons-png/*"
+    ]
   }
 }
